@@ -7,7 +7,7 @@ Ce dépôt GitHub sert de laboratoire personnel pour documenter mes recherches e
 | ID | Projet | Catégorie | Description | Compatibilité | Statut |
 | :---: | :--- | :--- | :--- | :--- | :--- |
 | **01** | **Redirection LinkedIn BadKB** | BadUSB/HID | Démonstration du risque d'émulation de clavier pour la redirection d'URL. | macOS (QWERTY) | ✅ Terminé |
-| **02** | [À VENIR] | [À VENIR] | [À VENIR] | [À VENIR] | ⏳ En cours |
+| **02** | **Rolling Code Brute Force** | Sub-GHz | PoC utilisant Python pour générer une fenêtre de codes roulants pour une attaque par force brute. | Universel (315 MHz) | ✅ Terminé |
 
 ---
 
