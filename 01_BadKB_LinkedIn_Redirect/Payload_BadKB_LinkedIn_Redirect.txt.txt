@@ -1,0 +1,27 @@
+REM Fichier : linkedin_direct.txt
+REM Cible : macOS avec clavier QWERTY (US)
+
+LAYOUT US
+
+REM Délai pour initialiser la connexion USB
+DELAY 1000
+
+REM Ouvrir Spotlight (CMD + Espace)
+GUI SPACE
+DELAY 500
+
+REM Taper "Safari" pour lancer le navigateur
+STRING safari
+DELAY 500
+ENTER
+
+REM Attendre le lancement du navigateur
+DELAY 3000
+
+REM Sélectionner la barre d'adresse (CMD + L)
+GUI l
+DELAY 500
+
+REM Taper l'URL de mon profil LinkedIn qui ici peut etre changer par un site malveillant
+STRING https://www.linkedin.com/in/yasmine-ben-youssef-14a9b722a/
+ENTER
