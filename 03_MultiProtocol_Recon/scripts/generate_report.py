@@ -4,7 +4,8 @@ from pathlib import Path
 from datetime import datetime
 import html
 
-BASE = Path("03_MultiProtocol_Recon/flipper_exports")
+# BASE = dossier flipper_exports, calculé par rapport à ce fichier
+BASE = (Path(__file__).parent / ".." / "flipper_exports").resolve()
 OUT = BASE / "report.html"
 
 def read_csv(p):
@@ -25,6 +26,7 @@ def table_html(rows, title):
     return f"<h3>{html.escape(title)}</h3><table border='1' cellpadding='4'><thead><tr>{header}</tr></thead><tbody>{body}</tbody></table>"
 
 def main():
+    BASE.mkdir(parents=True, exist_ok=True)
     ble = read_csv(BASE / "ble_agg.csv")
     nfc = read_csv(BASE / "nfc_agg.csv")
     sub = read_csv(BASE / "subghz_agg.csv")
