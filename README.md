@@ -8,6 +8,8 @@ Ce dépôt GitHub sert de laboratoire personnel pour documenter mes recherches e
 | :---: | :--- | :--- | :--- | :--- | :--- |
 | **01** | **Redirection LinkedIn BadKB** | BadUSB/HID | Démonstration du risque d'émulation de clavier pour la redirection d'URL. | macOS (QWERTY) | ✅ Terminé |
 | **02** | **Rolling Code Brute Force** | Sub-GHz | PoC utilisant Python pour générer une fenêtre de codes roulants pour une attaque par force brute. | Universel (315 MHz) | ✅ Terminé |
+| **03** | **Multi-Protocol Recon & Report**| Recon (BLE/NFC/Sub-GHz) | Outil pédagogique lecture-only pour détecter et rapporter périphériques proches | Multi | 🔜 En cours |
+
 
 ---
 
