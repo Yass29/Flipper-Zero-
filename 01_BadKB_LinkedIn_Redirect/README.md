@@ -1,24 +1,28 @@
-## 01. Redirection LinkedIn BadKB (Payload_BadKB_LinkedIn_Redirect)
+# 01 · USB HID — Browser Redirect
 
-### ⚠️ Avertissement et Sensibilisation (Red Teaming) ⚠️
+**A small Flipper Zero keyboard-emulation demonstration for macOS.**
 
-Ce script est un PoC qui met en lumière la menace que représentent les périphériques USB non vérifiés. Il redirige un utilisateur vers un site légitime (LinkedIn) mais montre clairement comment le point de contrôle de l'URL peut être détourné vers :
-* Un site de **Phishing** (vol d'identifiants).
-* Un site d'hébergement de **Malware** (téléchargement d'un virus).
+## Overview
 
-**Utilisez ce code uniquement pour des tests de sécurité autorisés.**
+The included [payload](./Payload_BadKB_LinkedIn_Redirect.txt.txt) demonstrates how a USB device emulating a keyboard can perform ordinary keyboard actions on a computer. In this example, the sequence opens **Safari** using Spotlight and navigates to a **legitimate LinkedIn profile**.
 
-### Détails du Code
-* **Fichier :** `01_BadKB_LinkedIn_Redirect/Payload_BadKB_LinkedIn_Redirect.txt`
-* **Cible :** macOS (clavier Anglais QWERTY)
-* **Fonction :** Utilise `GUI SPACE` (Cmd + Espace) puis `GUI l` (Cmd + L) pour naviguer vers l'URL.
+This is an awareness demonstration about trusting newly connected USB devices. It does **not** collect credentials, install software, or demonstrate a real phishing compromise.
 
-**[👉 Voir le code et la documentation détaillée du projet 01](01_BadKB_LinkedIn_Redirect/README.md)**
+## Environment
 
----
+- Device: Flipper Zero with keyboard-emulation support
+- Computer: macOS
+- Keyboard layout: US English / QWERTY
+- Destination: public LinkedIn profile
 
-## 🔑 Installation et Prérequis
+## What I learned
 
-* **Appareil :** Flipper Zero.
-* **Firmware :** Firmware officiel ou custom (Xtreme, Unleashed, etc.).
-* **Disposition Clavier :** Assurez-vous que la disposition de votre machine cible correspond à celle du payload.
+- How HID keyboard automation interacts with desktop shortcuts
+- Why keyboard layout and application startup timing matter
+- Why unfamiliar USB accessories deserve the same scrutiny as other untrusted inputs
+
+## Responsible-use note
+
+Run only on a machine you own or have explicit authorization to test. The demonstration uses a benign destination; it should not be repurposed to direct unsuspecting users to harmful websites.
+
+[← Back to lab overview](../README.md)
